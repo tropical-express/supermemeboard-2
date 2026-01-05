@@ -6,8 +6,8 @@
 
 <style>
 body {
-  background: #111;
-  color: white;
+  background: #0b0b0b;     /* dark mode background */
+  color: #eaeaea;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
@@ -15,23 +15,29 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  color: #ffffff;
 }
 
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 22px;
   justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-iframe {
-  border-radius: 10px;
+/* EMBED CARD */
+.grid iframe {
+  background: #ffffff;      /* keep embeds light */
+  border-radius: 14px;
+  padding: 4px;             /* small breathing room */
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 </style>
+
 </head>
 
 <body>
